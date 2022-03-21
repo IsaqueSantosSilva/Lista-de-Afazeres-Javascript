@@ -2,7 +2,7 @@
 
 <br />
 
-Protótipo: 
+Protótipo: https://isaquesantossilva.github.io/Lista-de-Afazeres-Javascript/
 
 <br />
 
