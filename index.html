@@ -7,21 +7,22 @@
     <title>Lista de Afazeres em JS</title>
   </head>
   <body>
-
     <div class="container">
+      <header class="header">
+        <p>TO DO LIST MAKER</p>
+      </header>
 
-      <h1>TO DO LIST MAKER</h1>
-      
       <div class="input-container">
         <input
           id="inputField"
           type="text"
-          placeholder='Consertar a lãmpada do banheiro...'
+          placeholder="Adicionar Afazeres..."
+          value="teste"
         />
-        <button id="addToDo">ADD</button>
+        <button id="addToDo"><i class="fas fa-plus"></i></button>
       </div>
 
-      <div id="toDoContainer"></div>
+      <div class="toDoContainer" id="toDoContainer"></div>
     </div>
 
     <script src="assets/script/script.js"></script>

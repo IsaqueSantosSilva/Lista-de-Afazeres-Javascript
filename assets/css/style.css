@@ -1,178 +1,102 @@
-@import url("https://fonts.googleapis.com/css2?family=Farro:wght@300&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@100;200;300;400;500;600;700;800&display=swap");
 * {
-  font-family: "Farro", sans-serif;
+  font-family: "Anek Tamil", sans-serif;
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s;
+  border: none;
+  outline: none;
 }
 
+html,
 body {
-  background: #222;
-}
-
-h1 {
-  text-align: center;
-  font-size: 3rem;
-  color: #ffffff;
-  text-shadow: 3px 3px 0px #000000;
-  padding-bottom: 1rem;
+  font-size: 120%;
+  background-color: #cdcdcd;
+  transition: 0.2s;
+  padding: 0.5rem;
 }
 
 .container {
-  border-radius: 5px;
-  margin: 0 auto;
-  width: 97%;
-  max-width: 50rem;
-  -webkit-box-shadow: 10px 10px 10px;
-  box-shadow: 10px 10px 10px;
-  background: #ce9191;
-  border: 3px solid #fff;
-  padding: 1rem;
-  position: relative;
-  top: 100px;
+  max-width: 800px;
+  margin: auto;
+  margin-top: 3rem;
 }
-
-.input-container {
-  border-bottom: 3px solid #fff;
-  padding: 0.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
+.container .header {
+  background-color: #de3f53;
+  color: #e1e3ea;
+  border-radius: 20px 20px 0em 0em;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+.container .header p {
+  font-size: 2.5rem;
+}
+.container .input-container {
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
 }
-
-.input-container input {
-  border-radius: 2px;
-  width: 50%;
-  padding: 0.5rem;
-  border: none;
-  outline: none;
-  margin: 0 2px;
+.container .input-container input {
+  flex-grow: 1;
+  background-color: #3c4979;
+  padding: 0.7rem 0.5rem;
+  font-size: 1.4rem;
+  color: #e1e3ea;
 }
-
-.input-container button {
-  background-color: #666;
-  text-shadow: 0px 0px 2px #000;
-  color: #eeeeee;
-  border-radius: 2px;
-  padding: 0.5rem;
+.container .input-container input:focus {
+  outline: 2px solid #f00;
+}
+.container .input-container button {
+  color: #e1e3ea;
+  background-color: #1dd2af;
   cursor: pointer;
-  border: none;
-  outline: none;
-  font-weight: 900;
-  margin: 0 2px;
+  padding: 0 1rem;
 }
-
-.input-container button:hover {
+.container .input-container button i {
+  font-size: 1.5rem;
+}
+.container .input-container button:hover {
   transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
 }
-
-.toDo-container {
-  padding: 1rem 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
+.container .toDoContainer .toDo-container {
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  border-bottom: 1px solid #fff;
+  background-color: #262e4c;
+  padding: 1rem 0.5rem;
 }
-
-.toDo-container p {
+.container .toDoContainer .toDo-container .todo-text {
   font-size: 1.2rem;
   font-weight: 600;
-  text-shadow: 1px 1px 0px #000;
-  text-transform: capitalize;
+  color: #e1e3ea;
 }
-
-.toDo-container button {
+.container .toDoContainer .toDo-container .buttons-div {
+  display: flex;
+  gap: 1rem;
+}
+.container .toDoContainer .toDo-container .buttons-div button {
+  font-size: 1.5rem;
+  background-color: #262e4c;
+  color: #e1e3ea;
   cursor: pointer;
-  padding: 0.2rem 0.5rem;
-  border: none;
-  outline: none;
-  color: #fff;
-  border-radius: 3px;
-  font-size: 1rem;
-  font-weight: 900;
-  -webkit-box-shadow: 0px 0px 2px #000;
-  box-shadow: 0px 0px 2px #000;
+}
+.container .toDoContainer .toDo-container .buttons-div button:hover {
+  transform: scale(1.1);
+}
+.container .toDoContainer hr {
+  width: 100%;
+  height: 5px;
+  background-color: #3c4979;
 }
 
-.removeTodo-btn {
-  background-color: #000;
-}
-
-.checkTodo-btn {
-  background-color: #666;
-}
-
-.toDo-container:hover {
-  background: #ad8282;
-}
-
-.toDo-container button:hover {
-  transform: scale(1.05);
-  -webkit-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  -o-transform: scale(1.05);
-}
-
-@media only screen and (max-width: 600px) {
-  body {
-    background: #000;
-  }
-
-  h1 {
-    font-size: 8vw;
-  }
-
-  .container {
-    border-radius: 5px;
-    margin: 0 auto;
-    width: 97%;
-    max-width: 50rem;
-    -webkit-box-shadow: 10px 10px 10px;
-    box-shadow: 10px 10px 10px;
-    background: #ce9191;
-    border: 3px solid #fff;
-    padding: 1rem;
-    position: relative;
-    top: 100px;
-  }
-
-  .input-container {
-    border-bottom: 1px solid #fff;
-  }
-
-  .input-container input {
-    width: 70%;
-  }
-
-  .toDo-container {
-    padding: 0.5rem;
-  }
-
-  .toDo-container p {
-    font-size: 0.9rem;
-    text-shadow: 0.5px 0.1px 0px #000;
-  }
-
-  .toDo-container button {
-    padding: 0.1rem 0.5rem;
-    color: #fff;
-    font-size: 0.9rem;
-    font-weight: 600;
+@media screen and (max-width: 800px) {
+  html,
+body {
+    font-size: 80%;
   }
 }
+@media screen and (max-width: 600px) {
+  html,
+body {
+    font-size: 70%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

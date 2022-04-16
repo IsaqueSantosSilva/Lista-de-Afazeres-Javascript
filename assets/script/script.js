@@ -8,18 +8,21 @@ addToDoButton.addEventListener("click", () => {
     toDoContainer.insertAdjacentHTML("afterbegin",
       `
 		<div class="toDo-container">
-			<p class="todo-text">
-				- ${inputField.value}
-			</p>
-			<div>
+			<li class="todo-text">
+				${inputField.value}
+			</li>
+
+			<div class="buttons-div">
 				<button class="removeTodo-btn"> 
-					<i class="fas fa-times"></i>
+          <i class="fas fa-trash"></i>
 				</button>
 				<button class="checkTodo-btn"> 
 					<i class="fas fa-check"></i>
 				</button>
 			</div>
+      
 		</div>
+    <hr>
 		`
     );
 
